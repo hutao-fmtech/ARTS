@@ -1,0 +1,1 @@
+- 配置大全：https://github.com/h2y/Shadowrocket-ADBlock-Rules
