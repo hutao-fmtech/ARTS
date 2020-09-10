@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-08-19 09:38:21
+ * @LastEditTime: 2020-09-09 11:45:17
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /ARTS/tip/git.md
+-->
 1. 常用配置
 
 ```
@@ -38,4 +46,6 @@ git config --global alias.last 'log -1 HEAD'
 - 取消已跟踪的文件：`git rm --canched <filie-name> ` 或 `git rm -r --cached <dir>`。（注：此操作回删除文件，同步到远程分支后，远程分支也会取消跟踪）
 
 
+5. git status 中文无法显示解决 `git config --global core.quotepath false `
 
+6. 克隆远程指定分支：`git clone remote-branch  remote-reop-url`
