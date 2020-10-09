@@ -1,0 +1,1 @@
+1. window下文件`^M`问题，可以通过设置`set ff=unix`解决。
