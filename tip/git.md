@@ -15,6 +15,7 @@ git config --global alias.ci commit
 git config --global alias.st status
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.last 'log -1 HEAD'
+git config --global pull.rebase true
 
 ```
 
@@ -46,6 +47,6 @@ git config --global alias.last 'log -1 HEAD'
 - 取消已跟踪的文件：`git rm --canched <filie-name> ` 或 `git rm -r --cached <dir>`。（注：此操作回删除文件，同步到远程分支后，远程分支也会取消跟踪）
 
 
-5. git status 中文无法显示解决 `git config --global core.quotepath false `
+5. git status 中文无法显示解决 `git config --global core.quotepath false`
 
 6. 克隆远程指定分支：`git clone remote-branch  remote-reop-url`
