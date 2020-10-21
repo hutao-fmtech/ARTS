@@ -16,7 +16,7 @@ git config --global alias.st status
 git config --global alias.unstage 'reset HEAD --'
 git config --global alias.last 'log -1 HEAD'
 git config --global pull.rebase true
-
+git config --global core.quotepath false
 ```
 
 ---
@@ -50,3 +50,5 @@ git config --global pull.rebase true
 5. git status 中文无法显示解决 `git config --global core.quotepath false`
 
 6. 克隆远程指定分支：`git clone remote-branch  remote-reop-url`
+
+7. 解决`git status`中文乱码`git config --global core.quotepath false`
