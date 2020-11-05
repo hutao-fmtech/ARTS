@@ -11,3 +11,5 @@
 4. 开启HTTP服务，`python3  -m http.server`，client 可以通过wget来下载。
 
 5. 显示隐藏文体 `shift + cmd + .`
+
+6. 同步时间:`sudo sntp -sS time.apple.com`
