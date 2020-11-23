@@ -5,3 +5,5 @@
     - 通过`find ./ -name xxx`查找文件所在位置。
     - 通过`find ./ -name xxx | xargs md5sum`确定文件是否一致。
     - 添加`-L`参数解决`find`不查找软连接目录问题。`find -L /directory/
+
+2. `lsb_release -a` Ubuntu 查看发行版本
