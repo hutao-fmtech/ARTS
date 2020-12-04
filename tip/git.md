@@ -38,7 +38,7 @@ git config --global core.quotepath false
 - 跟踪远程分支 `git branch -u origin/hutao`, 或者 `git branch --set-upstream-to origin/hutao`(跟踪远程 `hutao`分支)
 - 取消跟踪远程分支 `git branch --unset-upstream`
 - 查看远程分支状态 `git remote show origin`
-- 同步远程分支状态到本地（如新增、删除操作）`git remote prune origin`
+- 同步远程分支状态到本地（如新增、删除操作）`git remote prune origin`,`git remote update origin --prune`
 - 删除远程分支 `git push origin :delet_branch`，既推送一个空分支到远程。
 
 ---
