@@ -17,6 +17,7 @@ git config --global alias.unstage 'reset HEAD --'
 git config --global alias.last 'log -1 HEAD'
 git config --global pull.rebase true
 git config --global core.quotepath false
+git config --global core.editor "vim"
 ```
 
 ---
@@ -60,3 +61,5 @@ git config --global core.quotepath false
     >   -i 显示将要删除的文件
     >   -d 递归删除目录及文件（未跟踪的）
     >   -q 仅显示错误，成功删除的文件不显示
+
+9. 合并其他分支的部分文件 `git checkout --patch [branch_name] [file_url]`
