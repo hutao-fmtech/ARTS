@@ -14,3 +14,6 @@
     > 等于指定编译当前目录下所有.c文件，如果还有子目录，比如子目录为inc，则再增加一个wildcard函数，像这样：
     
     > SRC = $(wildcard *.c) $(wildcard inc/*.c)
+
+2. VS Code 写 Makefile 时，提示`makefile missing separator.  Stop.`
+   > On VS Code, just click the "Space: 4" on the downright corner and change it to tab when editing your Makefile.
