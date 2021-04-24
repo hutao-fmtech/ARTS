@@ -59,3 +59,13 @@ int main()
         cout << "ret = " << data << endl;
     }
 }
+
+/*
+
+核心要点：牺牲一个位置，来方便判满和判空。
+1. 判满：head == (tail + 1) % MAX_SIZE
+2. 判空：head == tail
+3. 入队回环：head = (head +1 ) % MAX_SIZE
+4. 出队回环：tail = (tail + 1) % MAX_SIZE
+
+*/
