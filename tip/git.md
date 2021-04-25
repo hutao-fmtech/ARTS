@@ -39,18 +39,18 @@ git config --global core.editor "vim"
 - 跟踪远程分支 `git branch -u origin/hutao`, 或者 `git branch --set-upstream-to origin/hutao`(跟踪远程 `hutao`分支)
 - 取消跟踪远程分支 `git branch --unset-upstream`
 - 查看远程分支状态 `git remote show origin`
-- 同步远程分支状态到本地（如新增、删除操作）`git remote prune origin`,`git remote update origin --prune`
-- 删除远程分支 `git push origin :delet_branch`，既推送一个空分支到远程。
+- 同步远程分支列表到本地（如新增、删除操作）`git remote prune origin`,`git remote update origin --prune`
+- 删除远程分支 `git push origin :delete_branch`，既推送一个空分支到远程。
 
 ---
 
 4. 文件跟踪操作
-- 取消已跟踪的文件：`git rm --canched <filie-name> ` 或 `git rm -r --cached <dir>`。（注：此操作回删除文件，同步到远程分支后，远程分支也会取消跟踪）
+- 取消已跟踪的文件：`git rm --cached <file-name> ` 或 `git rm -r --cached <dir>`。（注：此操作回删除文件，同步到远程分支后，远程分支也会取消跟踪）
 
 
 5. git status 中文无法显示解决 `git config --global core.quotepath false`
 
-6. 克隆远程指定分支：`git clone remote-branch  remote-reop-url`
+6. 克隆远程指定分支：`git clone remote-branch  remote-repo-url`
 
 7. 解决`git status`中文乱码`git config --global core.quotepath false`
 
