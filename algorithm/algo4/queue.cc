@@ -1,79 +1,54 @@
 #include <stack>
-#include <vector>
-#include <iostream>
 
 using namespace std;
+
 class MyQueue
 {
 private:
     /* data */
-    stack<int> in_stk;
-    stack<int> out_stk;
+    stack<int> in_stack;
+    stack<int> out_stack;
 
     void in2out()
     {
-        while (!in_stk.empty())
+        while (!in_stack.empty())
         {
-            out_stk.push(in_stk.top());
-            in_stk.pop();
+            out_stack.push(in_stack.top());
+            in_stack.pop();
         }
     }
 
 public:
+    MyQueue(/* args */);
+    ~MyQueue();
+
     void push(int x)
     {
-        in_stk.push(x);
+        in_stack.push(x);
     }
 
     int pop()
     {
-        if (out_stk.empty())
+        if (out_stack.empty())
         {
             in2out();
         }
-        int ret = out_stk.top();
-        out_stk.pop();
+        int ret = out_stack.top();
+        out_stack.pop();
         return ret;
     }
 
     int peek()
     {
-        while (out_stk.empty())
+        if (out_stack.empty())
         {
             in2out();
         }
-        return out_stk.top();
+        return out_stack.top();
     }
 
     bool empty()
     {
-        return in_stk.empty() && out_stk.empty();
+        return in_stack.empty() && out_stack.empty();
     }
-    MyQueue(/* args */);
-    ~MyQueue();
 };
-
-MyQueue::MyQueue(/* args */)
-{
-}
-
-MyQueue::~MyQueue()
-{
-}
-
-int main()
-{
-    MyQueue q;
-
-    vector<int> test = {1, 2, 3, 4};
-    for (auto &x : test)
-    {
-        q.push(x);
-    }
-
-    for (int i = 0; i < test.size()+1; i++)
-    {
-        cout << q.pop() << endl;
-    }
-    return 0;
-}
