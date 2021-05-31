@@ -18,3 +18,5 @@
     > 7、Miscellaneous （杂项）
     > 8、Administrative Commands （管理员命令）
     > 9、 其他（Linux特定的）， 用来存放内核例行程序的文档。
+
+4. 查看 so 的依赖关系：mips-linux-gnu-objdump -x libcurl.so | grep NEEDED
