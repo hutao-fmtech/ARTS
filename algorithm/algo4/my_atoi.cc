@@ -25,7 +25,7 @@ private:
     {
         if (isspace(c))
             return START;
-        if (c == '+' or c == '-')
+        if (c == '+' || c == '-')
             return SIGNED;
         if (isdigit(c))
             return IN_NUMBER;
@@ -63,7 +63,7 @@ public:
 
 int main()
 {
-    unordered_map<string, int> test_case = {{"123", 123}, {"-123", -123}, {"dd", 0},{"    123", 123},{"    123   13", 123}};
+    unordered_map<string, int> test_case = {{"123", 123}, {"-123", -123}, {"dd", 0}, {"    123", 123}, {"    123   13", 123}};
 
     Solution *p = new Solution();
 
