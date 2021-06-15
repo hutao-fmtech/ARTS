@@ -18,7 +18,7 @@ struct TreeNode
 void bfs(TreeNode *root)
 {
 
-    if (root == NULL)
+    if (root == nullptr)
     {
         return;
     }

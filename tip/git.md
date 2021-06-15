@@ -63,3 +63,5 @@ git config --global core.editor "vim"
     >   -q 仅显示错误，成功删除的文件不显示
 
 9. 合并其他分支的部分文件 `git checkout --patch [branch_name] [file_url]`
+    
+10. 查看指定人员的提交`git log --author=user-name`

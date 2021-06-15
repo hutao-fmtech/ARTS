@@ -22,6 +22,7 @@ int push(int data)
 {
     if (is_full())
     {
+        cout << "is full" << endl;
         return -1;
     }
     buf[tail] = data;
@@ -35,12 +36,13 @@ int pop(int *p_out)
 {
     if (empty())
     {
+        cout << "is empty" << endl;
         return -1;
     }
     *p_out = buf[head];
     head = (head + 1) % QUEUE_SIZE;
 
-    cout << "head = " << head << endl;
+    // cout << "head = " << head << endl;
     return 0;
 }
 
@@ -56,7 +58,10 @@ int main()
     {
         int data;
         int ret = pop(&data);
-        cout << "ret = " << data << endl;
+        if (ret == 0)
+        {
+            cout << data << endl;
+        }
     }
 }
 

@@ -3,6 +3,12 @@ struct list_head
     struct list_head *next, *prev;
 };
 
+
+#define offsetof(TYPE, MEMBER) ((size_t) &((TYPE*)0)->MEMBER)
+#define container_of(ptr, type, member) ({          \
+        const typeof( ((type *)0)->member ) *__mptr = (const typeof( ((type *)0)->member ) *)(ptr); \
+        (type *)( (char *)__mptr - offsetof(type,member) );})
+
 #define LIST_HEAD_INIT(name) \
     {                        \
         &(name), &(name)     \
